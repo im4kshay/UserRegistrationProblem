@@ -11,7 +11,9 @@ namespace UserRegistrationProblem
         static void Main(string[] args)
         {
             //Welcome Message
+            Console.WriteLine("----------------------------------------------------------------------");
             Console.WriteLine("=-=-=-=-=-=-=-=Welcome To the User Registration Problem=-=-=-=-=-=-=-=");
+            Console.WriteLine("----------------------------------------------------------------------");
 
             //object created
             UserRegistrationValidation validate = new UserRegistrationValidation();
@@ -19,6 +21,9 @@ namespace UserRegistrationProblem
             string firstName = Console.ReadLine();
             bool fNameResult = validate.ValidateFirstName(firstName);
             validate.PrintResult(fNameResult);
+
+            Console.WriteLine("--------------------------------------");
+
 
             Console.ReadLine();
         }
