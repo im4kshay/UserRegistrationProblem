@@ -13,6 +13,13 @@ namespace UserRegistrationProblem
             //Welcome Message
             Console.WriteLine("=-=-=-=-=-=-=-=Welcome To the User Registration Problem=-=-=-=-=-=-=-=");
 
+            //object created
+            UserRegistrationValidation validate = new UserRegistrationValidation();
+            Console.WriteLine("Enter First Name : ");
+            string firstName = Console.ReadLine();
+            bool fNameResult = validate.ValidateFirstName(firstName);
+            validate.PrintResult(fNameResult);
+
             Console.ReadLine();
         }
     }
