@@ -47,6 +47,13 @@ namespace UserRegistrationProblem
 
             Console.WriteLine("--------------------------------------");
 
+            Console.WriteLine("Enter Password : ");
+            string password = Console.ReadLine();
+            bool passwordResult = validate.ValidatePassword(password);
+            validate.PrintResult(passwordResult);
+
+            Console.WriteLine("--------------------------------------");
+
             Console.ReadLine();
         }
     }
