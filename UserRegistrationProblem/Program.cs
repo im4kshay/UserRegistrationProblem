@@ -54,6 +54,15 @@ namespace UserRegistrationProblem
 
             Console.WriteLine("--------------------------------------");
 
+            Console.WriteLine("Checking for sample mails : ");
+            foreach (string mail in validate.GetList())
+            {
+                Console.Write(mail + " : ");
+                validate.PrintResult(validate.ValidateEmail2(mail));
+            }
+
+            Console.WriteLine("--------------------------------------");
+
             Console.ReadLine();
         }
     }
