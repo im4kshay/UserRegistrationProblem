@@ -12,6 +12,8 @@ namespace UserRegistrationProblem
         {
             //Welcome Message
             Console.WriteLine("=-=-=-=-=-=-=-=Welcome To the User Registration Problem=-=-=-=-=-=-=-=");
+
+            Console.ReadLine();
         }
     }
 }
