@@ -40,6 +40,13 @@ namespace UserRegistrationProblem
 
             Console.WriteLine("--------------------------------------");
 
+            Console.WriteLine("Enter Mobile Number : ");
+            string mobNumber = Console.ReadLine();
+            bool mobNumberResult = validate.ValidateMobileNumber(mobNumber);
+            validate.PrintResult(mobNumberResult);
+
+            Console.WriteLine("--------------------------------------");
+
             Console.ReadLine();
         }
     }
