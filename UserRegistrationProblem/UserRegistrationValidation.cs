@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationProblem
 {
-    class UserRegistrationValidation
+    public class UserRegistrationValidation
     {
         //list of the sample emails
         private List<string> sampleMails = new List<string>()
